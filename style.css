@@ -1,0 +1,163 @@
+/* ===== Variables de color ===== */
+:root {
+    --color-bg: #f5f5f5;
+    --color-header: #6C5B7B;
+    --color-section: #F67280;
+    --color-button: #355C7D;
+    --color-button-hover: #6C5B7B;
+    --color-text: #333333;
+    --color-input: #FFFFFF;
+    --color-result: #FF6F61;
+}
+
+/* ===== Reset y estilos generales ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-input);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/* ===== Header ===== */
+.header-banner {
+    background-color: var(--color-header);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header-banner h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header-banner img {
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+/* ===== Sección de entrada ===== */
+.input-section {
+    padding: 20px;
+    background-color: var(--color-section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* ===== Input y botones ===== */
+.input-wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.button-add {
+    padding: 12px 20px;
+    background-color: var(--color-button);
+    color: #fff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* ===== Listas ===== */
+ul {
+    list-style: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.name-list li {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+
+.result-list li {
+    background-color: #fff;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-result);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== Botón de sorteo ===== */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-draw {
+    padding: 12px 30px;
+    background-color: var(--color-button);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-draw img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
