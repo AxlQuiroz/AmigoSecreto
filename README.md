@@ -16,8 +16,8 @@ Este proyecto es una aplicación de **Amigo Secreto** que permite sortear nombre
 ## Instalación
 1. Clona el repositorio:
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-
+git clone <URL_DEL_REPOSITORIO
+```
 Uso
 
 Ejecuta la función de sorteo para asignar nombres.
